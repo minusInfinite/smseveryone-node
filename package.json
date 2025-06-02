@@ -1,0 +1,16 @@
+{
+  "name": "smseveryone-node",
+  "version": "0.1.0",
+  "description": "",
+  "type": "module",
+  "main": "lib/smseveryone.js",
+  "types": "lib/smseveryone.d.ts",
+  "publishConfig": {},
+  "scripts": {
+    "gentypes": "pnpm --package=typescript dlx tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "packageManager": "pnpm@10.11.0"
+}
