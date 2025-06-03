@@ -1,9 +1,13 @@
 {
   "name": "smseveryone-node",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "",
   "type": "module",
   "main": "index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "./types/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/minusInfinite/smseveryone-node"
@@ -12,7 +16,9 @@
     "url": "https://github.com/minusInfinite/smseveryone-node/issues"
   },
   "homepage": "https://github.com/minusInfinite/smseveryone-node",
-  "scripts": {},
+  "scripts": {
+    "prepare": "pnpm --package=typescript dlx tsc index.js -d --allowJs --emitDeclarationOnly --declarationMap --outDir types"
+  },
   "keywords": [
     "sms",
     "smseveryone",
