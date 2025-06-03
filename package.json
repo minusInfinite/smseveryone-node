@@ -1,16 +1,27 @@
 {
   "name": "smseveryone-node",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "",
   "type": "module",
-  "main": "lib/smseveryone.js",
-  "types": "lib/smseveryone.d.ts",
-  "publishConfig": {},
-  "scripts": {
-    "gentypes": "pnpm --package=typescript dlx tsc"
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minusInfinite/smseveryone-node"
   },
-  "keywords": [],
-  "author": "",
+  "bugs": {
+    "url": "https://github.com/minusInfinite/smseveryone-node/issues"
+  },
+  "homepage": "https://github.com/minusInfinite/smseveryone-node",
+  "scripts": {},
+  "keywords": [
+    "sms",
+    "smseveryone",
+    "smseveryone-api"
+  ],
+  "author": "minusinfinite <ashley@minusinfinite.net>",
   "license": "MIT",
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.1",
+  "devDependencies": {
+    "@types/node": "^22.15.29"
+  }
 }
