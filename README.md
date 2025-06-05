@@ -2,11 +2,27 @@
 
 Unoffical SMSEveryone API Wrapper for NodeJS
 
+## Installation
+
+Use the package manager of your choice
+
+```shell
+
+pnpm add smseveryone-node
+
+```
+
+Import the package into your project
+
+```js
+
+import {SMSEveryone} from 'smseveryone-node'
+
+```
+
 ## Documentation
 
-<https://www.smseveryone.com.au/restapi>
-
-Made for using of a server.
+Official API Documentation - <https://www.smseveryone.com.au/restapi>
 
 ### Authentication
 
@@ -20,9 +36,17 @@ const sendSMS = new SMSEveryone('username','password')
 
 ```js
 
-await sendSMS.sms({originator:"AplhaTag",destinations:["phonenumbers"],message:"Hello, from SMS Everyone module test",action:"create"}).then(r => console.log(r)).catch(e => console.error(e))
+sendSMS.sms({
+    originator:"AplhaTag",
+    destinations:["phonenumbers"],
+    message:"Hello, from SMS Everyone module test",
+    action:"create"})
+    .then(r => console.log(r))
+    .catch(e => console.error(e))
 
 ```
+
+or using async and try..catch
 
 ### Endpoints Supported
 
