@@ -1,6 +1,6 @@
 {
   "name": "smseveryone-node",
-  "version": "0.3.2",
+  "version": "0.3.20",
   "description": "",
   "type": "module",
   "main": "index.js",
